@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Національний мультипредментий тест 2026</title>
+  <title>Національний мультипредметний тест 2026</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+  
   <style>
     html { scroll-behavior: smooth; }
     * { box-sizing: border-box; font-family: 'Roboto', sans-serif; }
@@ -40,14 +40,7 @@
       margin: 0 auto;
     }
     .logo-container img { height: 40px; display: block; }
-    
-    .user-name-wrapper {
-      flex: 1;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 5px;
-    }
+    .user-name-wrapper { flex: 1; display: flex; justify-content: flex-end; align-items: center; gap: 5px; }
     .user-name-display { font-size: 0.9rem; font-weight: 500; color: #333; }
 
     /* СЛАЙД 1: ВХІД */
@@ -60,7 +53,7 @@
     .input-field input { width: 100%; padding: 10px; border: 1px solid #bbb; border-radius: 4px; font-size: 1rem; outline: none; }
     .btn-login { background: #c1153e; color: white; border: none; padding: 12px 30px; border-radius: 4px; font-weight: 700; width: 100%; }
 
-    /* НОВИЙ СЛАЙД: ПРАВИЛА ТА ПРАВА */
+    /* СЛАЙД: ПРАВИЛА ТА ПРАВА */
     #rules-page { display: none; flex-direction: column; min-height: 100vh; background: #fff; }
     .rules-content { max-width: 1000px; margin: 30px auto; padding: 20px; }
     .rules-box { background: #eee; padding: 30px; border-radius: 4px; color: #444; line-height: 1.6; font-size: 0.95rem; max-height: 60vh; overflow-y: auto; margin-bottom: 30px; }
@@ -106,37 +99,22 @@
     .timer-num { font-weight: 700; font-size: 1.4rem; color: #000; min-width: 90px; }
     .timer-num.hidden { opacity: 0; }
     .eye-square { background: #c1153e; color: white; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 4px; font-size: 1.2rem; }
-
     .white-section { background: #fff; width: 100%; display: flex; justify-content: center; border-bottom: 1px solid #ccc; }
     .top-tabs { display: flex; gap: 25px; padding: 0 10px; }
     .top-tab { padding: 14px 5px; font-size: 0.95rem; cursor: pointer; color: #555; border-bottom: 3px solid transparent; white-space: nowrap; }
     .top-tab.active { color: #c1153e; border-bottom-color: #c1153e; font-weight: 700; }
-    .breadcrumb-row { padding: 15px 25px; display: flex; justify-content: space-between; color: #337ab7; font-size: 0.9rem; background: #fff; width: 100%; max-width: 1400px; border-bottom: 1px solid #ccc;}
+    .breadcrumb-row { padding: 15px 25px; display: flex; justify-content: space-between; color: #337ab7; font-size: 0.9rem; background: #fff; width: 100%; max-width: 1400px; border-bottom: 1px solid #ccc; }
     .subject-switcher { display: flex; width: 100%; background: #fff; border-bottom: 1px solid #ccc; max-width: 1400px; }
     .sub-btn { flex: 1; padding: 18px; border-right: 1px solid #ccc; text-align: center; font-size: 0.95rem; color: #666; }
     .sub-btn.active { color: #c1153e; border-bottom: 3px solid #c1153e; font-weight: 700; }
     .sub-btn.nav-arrows { color: #888; background: #fafafa; max-width: 100px; font-weight: bold; }
-
     .main-layout { display: flex; padding: 25px; gap: 25px; width: 100%; max-width: 1400px; align-items: flex-start; }
     .questions-stack { flex: 1; display: flex; flex-direction: column; gap: 20px; }
     .card { background: #fff; padding: 35px; border-radius: 4px; border: 1px solid #bbb; box-shadow: 0 1px 4px rgba(0,0,0,0.08); width: 100%; }
-    
-    .intro-card { 
-      border: 1px solid #bbb; 
-      background: #fdfdfd; 
-      padding: 25px 40px; 
-      margin-bottom: 25px; 
-      border-radius: 4px; 
-      text-align: center; 
-      line-height: 1.8; 
-      font-weight: 500;
-      font-size: 0.95rem;
-      color: #333;
-    }
+    .intro-card { border: 1px solid #bbb; background: #fdfdfd; padding: 25px 40px; margin-bottom: 25px; border-radius: 4px; text-align: center; line-height: 1.8; font-weight: 500; font-size: 0.95rem; color: #333; }
     .radio-icon { display:inline-block; width:18px; height:18px; border:1px solid #337ab7; border-radius:50%; vertical-align:middle; margin: 0 4px; background: white; position: relative; top: -1px; }
     .radio-icon.active { background: white; }
     .radio-icon.active::after { content:''; position:absolute; top:4px; left:4px; width:8px; height:8px; background:#337ab7; border-radius:50%; }
-
     .btn-save { background: #c1153e; color: white; border: 1px solid transparent; padding: 14px 35px; border-radius: 4px; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; margin-top: 20px; }
     .btn-save.saved { background: #eeeeee !important; color: #999 !important; border: 1px solid #ccc; cursor: default; }
     .side-bar { width: 320px; position: sticky; top: 160px; }
@@ -148,10 +126,7 @@
     .option-item input { margin-right: 15px; transform: scale(1.3); }
 
     /* МОДАЛЬНЕ ВІКНО ПЕРЕХОДУ */
-    #switch-overlay {
-      display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0,0,0,0.4); z-index: 5000; justify-content: center; align-items: center;
-    }
+    #switch-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); z-index: 5000; justify-content: center; align-items: center; }
     .switch-modal-box { background: #e9e9e9; width: 600px; border-radius: 8px; overflow: hidden; border: 1px solid #999; box-shadow: 0 5px 20px rgba(0,0,0,0.3); }
     .switch-header { background: #c1153e; color: white; padding: 10px 15px; display: flex; justify-content: space-between; font-weight: 500; font-size: 1.1rem; }
     .switch-body { padding: 20px; }
@@ -173,7 +148,7 @@
     .unsaved-box { border: 2px solid #c1153e; background: #fff; padding: 20px; position: relative; }
     .unsaved-header { display: flex; align-items: center; gap: 10px; font-weight: 700; color: #333; margin-bottom: 10px; }
     .icon-info { background: #c1153e; color: white; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; }
-    .unsaved-list { padding-left: 32px; font-size: 0.95rem; color: #333; }
+    .unsaved-list { padding-left: 32px; font-size: 0.95rem; color: #333; max-height: 250px; overflow-y: auto; }
 
     /* РЕЗУЛЬТАТИ */
     #result-page { display: none; flex-direction: column; min-height: 100vh; background: #fff; }
@@ -194,7 +169,7 @@
     .text-q { flex: 1; }
     .img-q img { max-width: 280px; border: 1px solid #eee; border-radius: 4px; }
 
-    /* МЕХАНІКА ВІДПОВІДНОСТЕЙ - СТИЛІ З ФОТО */
+    /* МЕХАНІКА ВІДПОВІДНОСТЕЙ */
     .matching-box-grey { border: 1px solid #ccc; background: #fdfdfd; padding: 20px; margin-bottom: 25px; font-size: 0.9rem; color: #333; line-height: 1.6; }
     .matching-flex-container { display: flex; gap: 30px; margin-top: 20px; align-items: flex-start; }
     .matching-left-area { flex: 2; background: #e0f2ff; border: 1px solid #bce0ff; border-radius: 8px; padding: 20px; }
@@ -202,24 +177,24 @@
     .match-row { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
     .matching-text-bubble { flex: 1; background: #fff; border: 1px solid #bce0ff; padding: 10px 15px; border-radius: 6px; font-size: 0.95rem; font-weight: 500; }
     .matching-arrow { color: #337ab7; font-weight: bold; font-size: 1.2rem; }
-    .matching-drop-field { 
-      width: 140px; height: 45px; background: #fff; border: 1px solid #ccc; border-radius: 6px; 
-      display: flex; align-items: center; justify-content: space-between; padding: 0 10px; cursor: pointer; position: relative;
-    }
+    .matching-drop-field { width: 140px; height: 45px; background: #fff; border: 1px solid #ccc; border-radius: 6px; display: flex; align-items: center; justify-content: space-between; padding: 0 10px; cursor: pointer; position: relative; }
     .matching-drop-field.active { border: 2px solid #337ab7; box-shadow: 0 0 5px rgba(51,122,183,0.3); }
     .matching-val-text { font-weight: 900; color: #333; font-size: 1.1rem; }
-    .matching-clear-btn { color: #c1153e; font-weight: 700; padding: 5px; cursor: pointer; }
-    .matching-opt-btn { 
-      background: #fff; border: 1px solid #81c784; padding: 10px; margin-bottom: 10px; 
-      border-radius: 6px; text-align: left; cursor: pointer; font-size: 0.9rem; font-weight: 500; width: 100%;
-    }
+    .matching-clear-btn { color: #c1153e; font-weight: 700; padding: 5px; cursor: pointer; font-size: 1.2rem; }
+    .matching-opt-btn { background: #fff; border: 1px solid #81c784; padding: 10px; margin-bottom: 10px; border-radius: 6px; text-align: left; cursor: pointer; font-size: 0.9rem; font-weight: 500; width: 100%; }
     .matching-opt-btn:hover { background: #f1f8f1; border-color: #4caf50; }
 
-    /* СТИЛІ ДЛЯ ВПИСУВАННЯ ВІДПОВІДІ */
+    /* ВПИСУВАННЯ ВІДПОВІДІ */
     .input-answer-box { margin-top: 20px; }
-    .answer-field-wrapper { border: 1px solid #ccc; background: #f5f5f5; width: 250px; padding: 10px; border-radius: 4px; display: flex; align-items: center; gap: 10px; }
+    .answer-field-wrapper { background: #fff; width: 250px; padding: 10px; border-radius: 4px; display: flex; align-items: center; gap: 10px; margin-top: 20px; }
     .input-q-field { border: 1px solid #bbb; padding: 8px; font-size: 1.1rem; width: 100%; outline: none; background: #fff; }
     .input-q-field:focus { border-color: #c1153e; }
+	.flex-q { 
+      display: flex; 
+      gap: 20px; 
+      align-items: flex-start; 
+      margin-bottom: 25px; /* Додатковий відступ знизу */
+    }
   </style>
 </head>
 <body>
@@ -299,11 +274,18 @@
   </header>
   <div class="confirm-content">
     <div class="confirm-title">ВСТУПНІ ВИПРОБУВАННЯ</div>
-    <div class="test-banner">
+    <div class="test-banner" style="margin-bottom: 20px;">
       <div class="banner-red">🏛</div>
       <div class="banner-info">
-        <div style="font-weight:700;">НМТ, 12.01.2026 РОКУ, 10:00</div>
+        <div style="font-weight:700;">НМТ, 12.01.2026 РОКУ, 10:00 (1 ЕТАП)</div>
         <button class="btn-red" onclick="showPreStart()">Перейти до тесту</button>
+      </div>
+    </div>
+    <div class="test-banner" style="margin-bottom: 20px;">
+      <div class="banner-red">🏛</div>
+      <div class="banner-info">
+        <div style="font-weight:700;">НМТ, 12.01.2026 РОКУ, 12:00 (2 ЕТАП)</div>
+        <button class="btn-red" style="background: #e21a43;" onclick="startSecondStage()">Перейти до тесту</button>
       </div>
     </div>
   </div>
@@ -317,7 +299,15 @@
       <span style="font-size: 0.7rem; color: #333;">▾</span>
     </div>
   </header>
-  <div class="white-section"><div class="content-max-width"><div class="top-tabs"><div class="top-tab active">Іспит</div><div class="top-tab" onclick="openMathDocs()">Математика: довідкові матеріали</div><div class="top-tab">Інструкція</div></div></div></div>
+  <div class="white-section">
+    <div class="content-max-width">
+      <div class="top-tabs">
+        <div class="top-tab active">Іспит</div>
+        <div class="top-tab" onclick="openMathDocs()">Математика: довідкові матеріали</div>
+        <div class="top-tab">Інструкція</div>
+      </div>
+    </div>
+  </div>
   <div class="pre-content">
     <div class="test-selection-box">
       <div class="test-title-row">
@@ -341,10 +331,18 @@
       <span style="font-size: 0.7rem; color: #333;">▾</span>
     </div>
   </header>
-  <div class="white-section"><div class="content-max-width"><div class="top-tabs"><div class="top-tab active">Іспит</div><div class="top-tab" onclick="openMathDocs()">Математика: довідкові матеріали</div><div class="top-tab">Інструкція</div></div></div></div>
+  <div class="white-section">
+    <div class="content-max-width">
+      <div class="top-tabs">
+        <div class="top-tab active">Іспит</div>
+        <div class="top-tab" onclick="openMathDocs()">Математика: довідкові матеріали</div>
+        <div class="top-tab">Інструкція</div>
+      </div>
+    </div>
+  </div>
   <div class="instr-container">
     <div class="instr-main-box">
-      <div class="instr-title">Тест "НМТ-2026_демоверсія" обмежений у часі (2 години).</div>
+      <div class="instr-title">Тест "НМТ-2026_демоверсія" (1 Етап) обмежений у часі (2 години).</div>
       <div class="instr-text">
         Національний мультипредметний тест (НМТ) містить завдання з кількох навчальних предметів. Ви можете самі розподіляти час між предметами, головне — стежте за таймером, який показує, скільки залишилося хвилин до завершення роботи над НМТ.<br><br>
         Як тільки Ви натиснете на кнопку «Розпочати роботу над тестом», автоматично розпочнеться відлік часу, відведеного на виконання тестових завдань.
@@ -359,11 +357,12 @@
     <div class="top-bar-branding">
       <div class="logo-container"><img src="img/nmt-logo.png" alt="УЦОЯО"></div>
       <div class="user-name-wrapper">
-        <div class="user-name-display"></div> 
+        <div class="user-name-display"></div>
         <span style="font-size: 0.7rem; color: #333; cursor: pointer;">▾</span>
       </div>
     </div>
   </div>
+  
   <div class="header-area">
     <div class="content-max-width">
       <div class="instruction-text" id="info-panel">
@@ -378,19 +377,34 @@
       </div>
     </div>
   </div>
-  <div class="white-section"><div class="content-max-width"><div class="top-tabs"><div class="top-tab active">Іспит</div><div class="top-tab" onclick="openMathDocs()">Математика: довідкові матеріали</div><div class="top-tab">Інструкція</div></div></div></div>
-  <div style="background:#fff; width:100%; display:flex; flex-direction:column; align-items:center;">
-    <div class="breadcrumb-row"><div id="path-text">Іспит &nbsp;›&nbsp; НМТ-2026_демоверсія &nbsp;›&nbsp; Математика</div><div style="cursor:pointer; font-size: 1.2rem; color: #888;">⤧</div></div>
-    <div class="subject-switcher">
-      <div class="sub-btn nav-arrows" onclick="switchSubject('math')">‹ Назад</div>
-      <div class="sub-btn active" id="btn-math" onclick="switchSubject('math')">Математика</div>
-      <div class="sub-btn" id="btn-hist" onclick="switchSubject('hist')">Історія України</div>
-      <div class="sub-btn nav-arrows" style="border-right:none;" onclick="switchSubject('hist')">Вперед ›</div>
+
+  <div class="white-section">
+    <div class="content-max-width">
+      <div class="top-tabs">
+        <div class="top-tab active">Іспит</div>
+        <div class="top-tab" onclick="openMathDocs()">Математика: довідкові матеріали</div>
+        <div class="top-tab">Інструкція</div>
+      </div>
     </div>
   </div>
+
+  <div style="background:#fff; width:100%; display:flex; flex-direction:column; align-items:center;">
+    <div class="breadcrumb-row">
+      <div id="path-text">Іспит &nbsp;›&nbsp; НМТ-2026_демоверсія &nbsp;›&nbsp; Українська мова</div>
+      <div style="cursor:pointer; font-size: 1.2rem; color: #888;">⤧</div>
+    </div>
+    <div class="subject-switcher" id="sub-switcher-area">
+      </div>
+  </div>
+
   <div class="main-layout">
     <div class="questions-stack" id="q-list"></div>
-    <aside class="side-bar"><div class="nav-card"><div style="font-weight: 700; font-size: 1.1rem; color: #333;">Завдання</div><div class="nav-grid" id="n-grid"></div></div></aside>
+    <aside class="side-bar">
+      <div class="nav-card">
+        <div style="font-weight: 700; font-size: 1.1rem; color: #333;">Завдання</div>
+        <div class="nav-grid" id="n-grid"></div>
+      </div>
+    </aside>
   </div>
 </div>
 
@@ -411,13 +425,13 @@
 <div id="finish-overlay">
   <div class="finish-modal">
     <div class="modal-title">Ви впевнені, що бажаєте завершити роботу над тестом?</div>
-    <div id="unsaved-list" style="margin-bottom:20px; color:#c1153e;"></div>
+    <div id="unsaved-list-count" style="margin-bottom:20px; color:#c1153e;"></div>
     <div class="modal-btns">
       <button class="btn-confirm-finish modal-btn" onclick="goToResults()">Так, завершити роботу</button>
       <button class="btn-return modal-btn" onclick="closeFinishModal()">Ні, повернутися до виконання завдань</button>
     </div>
     <div class="unsaved-box" id="unsaved-container">
-      <div class="unsaved-header"><div class="icon-info">i</div>Не надано та/або не збережено відповіді до таких завдань:</div>
+      <div class="unsaved-header"><div class="icon-info">i</div>Не надано та/або не збережено відповіді:</div>
       <div class="unsaved-list" id="unsaved-list-inner"></div>
     </div>
   </div>
@@ -426,9 +440,9 @@
 <div id="result-page">
   <header class="auth-header">
     <div class="logo-container"><img src="img/nmt-logo.png" alt="УЦОЯО" class="header-logo"></div>
-    <div class="user-name-wrapper">
-      <div class="user-name-display"></div>
-      <span style="font-size: 0.7rem; color: #333;">▾</span>
+    <div class="user-name-wrapper" onclick="returnToSelection()" style="cursor: pointer;">
+        <div class="user-name-display"></div>
+        <span style="font-size: 0.7rem; color: #333;">▾</span>
     </div>
   </header>
   <div class="result-content">
@@ -446,16 +460,48 @@
 </div>
 
 <script>
-  // БАЗА КОРИСТУВАЧІВ
   const users = [
-    { login: "01792", pass: "ed092", name: "Пушкар Максим " },
-    { login: "48231", pass: "nb671", name: "Вуйцик Вероніка Ігорівна" },
-    { login: "90544", pass: "zx112", name: "Клименко Юлія Сергіївна" },
-    { login: "33819", pass: "rt990", name: "Шевченко Артем Вікторович" },
-    { login: "71205", pass: "kw455", name: "Бондар Оксана Миколаївна" }
-  ];
+    { login: "4208315", pass: "2d9k405", name: "Пушкар Максим" },
+    { login: "1729406", pass: "nb671x2", name: "Вуйцик Вероніка Ігорівна" },
+    { login: "8835124", pass: "m99p31a", name: "Клименко Юлія Сергіївна" },
+    { login: "5061732", pass: "rt042v8", name: "Шевченко Артем Вікторович" },
+    { login: "2947150", pass: "kw455s1", name: "Бондар Оксана Миколаївна" }
+ ];
 
   const data = {
+    ukr: [
+      { id: 1, type: 'choice', text: "Прочитайте речення (цифра позначає наступне слово). <br><br> У <b>(1)дов<u>і</u>днику</b> були не тільки правила, але й письмові <b>(2)завданн<u>я</u></b> за <b>(3)нов<u>и</u>м</b> правописом, і <b>(4)доньк<u>а</u></b> наполегливо просила його купити для <b>(5)навч<u>а</u>ння</b>; тому довелося їхати в крамницю за два <b>(6)кв<u>а</u>ртали</b>, щоб виконати <b>(7)обіц<u>я</u>нку</b> й <b>(8)прин<u>е</u>сти</b> книжку вчасно. <br><br> НЕПРАВИЛЬНО виділено букви на позначення наголошених голосних у всіх словах, позначених цифрами:", opts: ["1, 4, 5, 8", "2, 3, 6, 7", "2, 4, 6, 8", "3, 5, 6, 8"], correct: 2, saved: false, selected: null },
+	  { id: 2, type: 'choice', text: "Дотримано правил уживання великої букви в рядку:", opts: ["Будинок письменника, Національна Академія Наук України, дон Педро, сузір’я Великої Ведмедиці", "Людвіг ван Бетховен, Міністерство Культури України, харків'янин, Імператор Візантії", "Друга світова війна, Полтавська битва, Ренесанс, День Незалежності України", "проспект Свободи, річка Південний Буг, Кримський Півострів, шевченківська хата"], correct: 2, saved: false, selected: null },
+      { id: 3, type: 'choice', text: "Суфікс <b>-уват- (-юват-)</b> має однакове значення в усіх словах, ОКРІМ:", opts: ["білуватий", "злодійкуватий", "синюватий", "круглуватий"], correct: 1, saved: false, selected: null },
+      { id: 4, type: 'choice', text: "З дефісом треба писати всі складні слова в рядку:", opts: ["коренево/суфіксальний, корене/вмісний, корене/подібний", "ідейно/політичний, ідейно/виховний, ідейно/художній", "ніжно/блакитний, ніжно/лиций, ніжно/колірний", "кисло/солоний, кисло/молочний, кислото/стійкий"], correct: 1, saved: false, selected: null },
+      { id: 5, type: 'choice', text: "М'який знак на місці пропуску треба писати в усіх словах рядка, ОКРІМ:", opts: ["по-товарис..кому, дон..ці, свіжісін..кий, сяд..те", "кін..кий, гуцул..ський, долен..ці, жен..шень", "брин..чати, уманс..кий, у скрин..ці, їдал..ня", "голівон..ці, спрац..ований, Уман..щина, чотир..ох"], correct: 3, saved: false, selected: null },
+	  { id: 6, type: 'choice', text: "Однаковий звук позначають букви, виділені в окремих словах речення:", opts: ["Людям здавало<b><u>с</u></b>я, що правди вже ніколи не буде, <b><u>с</u></b>праведливо<b><u>с</u></b>ті чекати не <b><u>с</u></b>лід.", "Ви <b><u>з</u></b>араз, <b><u>з</u></b>вичайно, можете <b><u>з</u></b>мінити своє ставлення до мене.", "Усі кві<b><u>т</u></b>и: соняхи, кульбабки, волошки — тягну<b><u>т</u></b>ься до нашого життєдайного сві<b><u>т</u></b>ла.", "Віра, на<b><u>д</u></b>ія, любов — це справ<b><u>д</u></b>і непо<b><u>д</u></b>ільні супутники буття людського."], correct: 3, saved: false, selected: null },
+      { id: 7, type: 'choice', text: "Літеру <b>с</b> на місці пропуску потрібно писати в усіх словах рядка:", opts: ["..хибити, ..цілити, ..формувати", "..тирати, ..жити, ..кидати", "..пекти, ..хитрувати, ..простити", "..клеїти, ..шити, ..фотографувати"], correct: 2, saved: false, selected: null },
+      { id: 8, type: 'choice', text: "НЕМАЄ орфографічних помилок у варіанті:", opts: ["У ці теплі воскові дні, пронизанні сонцем, обличчя людей світилися лагідним сяйвом осені; у парках бродили зачаровані фотографи, ловили об’єктивом верхівки тополь.", "Фотографи вибирали кадр для запізнілого жучка-сонечка на розімлілому стеблі чубатої айстри чи напів розлущеного каштана, якому пощастило втриматися на гілці і грайливо підморгнути роскиданим по землі родичам.", "В іншому кутку чисто-вибілена піч, що берегла родинне вогнище, від неї доносився запах сіна, м’яти, а ще духм’яних паляниць і пухких пасок.", "Тихо німували на стінах мамині рушники, дбайливо припасовані до образів; посередині хати – ясеновий стіл, покритий доморобною чистою скатертиною."], correct: 3, saved: false, selected: null },
+      { id: 9, type: 'choice', text: "Подвоєні букви треба писати в усіх словах рядка:", opts: ["гречан..ий, страшен..ий, антен..ий", "від..аний, бездоган..ий, клятвен..ий", "електрон..ий, благословен..ий, склян..ий", "роз..броїти, священ..ий, безімен..ий"], correct: 3, saved: false, selected: null },
+      { id: 10, type: 'choice', text: "Лексична помилка є в рядку:", opts: ["запущений вигляд", "стати в пригоді", "цивільний шлюб", "зіставити факти"], correct: 0, saved: false, selected: null },
+	  { id: 11, type: 'choice', text: "Редагування потребує речення:", opts: ["Вітри північні тремтять, затихаючи між кущами лавровими.", "Ідуть по Хрещатику люди щільно, як у черзі, майже притулившись один до одного.", "Втративши кордон чи державність, народ завжди має можливість їх відновити, а мови не відновить ніколи: вона втратиться на віки вічні.", "Старий воєвода вважав, що не може його дочка, живучи серед повстанців, не навчитися того, що вміють вони.", "Відпочиваючи в Карпатах, соснові ліси напувають тебе цілющою силою."], correct: 4, saved: false, selected: null },
+      { id: 12, type: 'choice', text: "Правильно розставлено розділові знаки при прямій мові в реченні:", opts: ["«Мотре! Хто це тобі купив таке гарне намисто?», – спитав Карпо.", "«Веди ж нас, Василю, до пана, – каже полковник Шрам. – Де він? Чи в світлиці, чи в пасіці?»", "«Нащо ви одв’язали нашого коня та заперли в свій хлів? – крикнула Мотря: Не святі ж прийшли з неба та одв’язали його!»", "Запала тиша, як в страшному сні, Горбань сказав – «Причому тут пісні?»", "«Ти, Сергію, – виказую. – хоч би раз прийшов вчасно. Завжди тебе чекати треба»."], correct: 1, saved: false, selected: null },
+      { id: 13, type: 'choice', text: "НЕ мають закінчення обидва слова в рядку:", opts: ["авто, ножиці", "обіцяючи, трюмо", "написавши, дно", "відчинено, молодь", "небезпечно, вікно"], correct: 1, saved: false, selected: null },
+      { id: 14, type: 'choice', text: "Українським відповідником іншомовного слова <b>дидактичний</b> є:", opts: ["повчальний", "розважальний", "теоретичний", "риторичний", "емоційний"], correct: 0, saved: false, selected: null },
+	  { id: 15, type: 'choice', text: "Прочитайте речення (цифра позначає попередній розділовий знак). <br><br> <i>Колись у дитинстві йому снилися сни<b>:(1)</b> він тримав у руках жар-птицю<b>,(2)</b> а потім<b>,(3)</b> прокинувшись<b>,(4)</b> він навіть відчував на долонях дотик золотого<b>,(5)</b> сліпучого пір’я<b>,(6)</b> але тануло останнє марево сну, згодом приходила до нього сумна впевненість<b>,(7)</b> що ніякої жар-птиці не було<b>,(8)</b> що все це привиділося.</i> <br><br> НЕПРАВИЛЬНО обґрунтовано вживання розділових знаків у рядку:", opts: ["двокрапка 1 – між частинами складного речення, що поєднані безсполучниковим зв’язком", "коми 2, 6 – між частинами складного речення, що поєднані сурядним зв’язком", "коми 3, 4 – кома при відокремленій обставині", "кома 5 – при відокремленому означенні", "коми 7, 8 – між частинами складного речення, що поєднані підрядним зв’язком"], correct: 3, saved: false, selected: null },
+      { id: 16, type: 'choice', text: "Шановний ________ , підкажіть, скільки коштує ________ какаду і який корм буде для нього ________ ?</i>", opts: ["добродіє, рожевий, найбільш корисним", "добродію, рожевий, найбільш кориснішим", "добродію, рожеве, найбільш корисним", "добродій, рожевий, найкориснішим", "добродію, рожевий, найбільш корисним"], correct: 4, saved: false, selected: null },
+      { id: 17, type: 'choice', text: "Гуляючи в парку ________ , ми зустріли свого колишнього викладача Сергія ________ , якого не бачили півтора ________ .</i>", opts: ["по алеях, Григорійовича, року", "по алеям, Григоровича, роки", "алеями, Григорійовича, року", "по алеях, Григоровича, року", "по алеях, Григоровича, роки"], correct: 3, saved: false, selected: null },
+      { id: 18, type: 'choice', text: "Цей ________ став мені ________ , бо вирішив нарешті прибрати в кухні ________ .</i>", opts: ["засіб для миття, в нагоді, до пуття", "миючий засіб, в пригоді, до пуття", "мийний засіб, в нагоді, толком", "мийний засіб, в пригоді, толком", "засіб для миття, в пригоді, до пуття"], correct: 4, saved: false, selected: null },
+	  { id: 19, type: 'choice', text: "________ , зустрінемося ________ біля кінотеатру ________ .</i>", opts: ["Насте, за чверть дев’ята, під відкритим небом", "Настя, за чверть дев’ята, просто неба", "Насте, за чверть дев’ята, просто неба", "Насте, за чверть до дев’яти, просто неба", "Настю, без чверті дев’ять, просто неба"], correct: 2, saved: false, selected: null },
+      { id: 20, type: 'choice', text: "Сьогодні ми ________ договір ________ продуктів харчування для студентського ________ .</i>", opts: ["підписали, на закупівлю, хабу", "заключили, на закупівлю, хабу", "заключили, на закупівлю, хаба", "уклали, на купівлю, хабу", "підписали, на закупівлю, хаба"], correct: 0, saved: false, selected: null },
+      { id: 21, type: 'choice', text: "Первісний текст буде відновлено, якщо речення розташувати в послідовності, запропонованій у рядку:", opts: ["○ □ ◇ ∇ Δ", "○ Δ □ ∇ ◇", "○ ◇ Δ □ Δ", "○ □ ∇ ◇ Δ", "○ ∇ Δ □ ◇"], correct: 1, saved: false, selected: null },
+	  { id: 22, type: 'choice', text: "Пунктуаційну помилку допущено в реченні:", opts: ["Δ", "○", "◇", "□", "∇"], correct: 3, saved: false, selected: null },
+      { id: 23, type: 'choice', text: "Підметом є виділене слово:", opts: ["простори", "хаби", "послуги", "час", "заняття"], correct: 1, saved: false, selected: null },
+      { id: 24, type: 'choice', text: "Відокремленим узгодженим означенням ускладнено речення:", opts: ["Δ", "○", "◇", "□", "∇"], correct: 1, saved: false, selected: null },
+      { id: 25, type: 'choice', text: "Односкладним безособовим є речення:", opts: ["Δ", "○", "◇", "□", "∇"], correct: 0, saved: false, selected: null },
+	  { id: 26, type: 'match', text: "Доберіть до кожного фразеологізму (1–4) синонім (А – Д).", rows: ["де козам роги правлять", "хоч греблю гати", "замилити очі", "клинці підбивати"], cols: ["А напустити туману", "Б де Макар телят пасе", "В і свині не їдять", "Г п'яте через десяте", "Д підкочуватися бубликом"], correct: [1, 2, 0, 4], saved: false, selected: [null, null, null, null] },
+      { id: 27, type: 'match', text: "З’ясуйте, якою частиною мови (А – Д) є виділені в реченні слова (1–4). <br><br> <i>Нещасна, <b>(1)неправдива</b> людина, <b>(2)що</b> <b>(3)добровільно</b> й легко зрікається рідної мови; щаслива, праведна людина, що <b>(4)в</b> радості й горі будує слово своєї землі.</i>", rows: ["неправдива", "що", "добровільно", "в"], cols: ["А прикметник", "Б прислівник", "В займенник", "Г прийменник", "Д сполучник"], correct: [0, 2, 1, 3], saved: false, selected: [null, null, null, null] },
+      { id: 28, type: 'match', text: "Доберіть приклад (А – Д) до кожної умови вживання тире (1–4).", rows: ["тире між підметом і присудком", "тире перед узагальнювальним словом", "тире при відокремленій прикладці", "тире між частинами безсполучникового речення"], cols: ["А Довго набирав швидкість старенький автомобіль – наш дім на колесах.", "Б Краса людська – поняття містке.", "В Ні шалена спека, ні голод, ні поневіряння – ніщо не виводило його з рівноваги.", "Г Попадавсь їм багач у руки – вони його оббирали, попадався вбогий – вони його наділяли.", "Д Було, як заговорить або засміється – і старому веселіше стане."], correct: [1, 2, 0, 3], saved: false, selected: [null, null, null, null] },
+	  { id: 29, type: 'match', text: "Доберіть приклад (А – Д) до кожного типу складного речення (1–4).", rows: ["складносурядне", "складнопідрядне", "безсполучникове", "з різними видами зв’язку"], cols: ["А Коли хто не блукав по шляхах курських і сумських, не топтав стежок землі чернігівської і сіверської, вважай: не знає він своєї землі.", "Б Чудова, невидана та природна зона, якої не назвеш ані поліссям, ані лісостепом, бо вони тут ніби злились воєдино і явили людям щось третє.", "В Ідеш дорогою, а пообіч степ широкий та розлогий.", "Г А там, збоку, починається ліс, синій та густий, літніми фарбами переповнений, тягнеться кудись у безкрай.", "Д Вийдеш на гору – зирк, перед тобою – диво небачене."], correct: [2, 1, 4, 0], saved: false, selected: [null, null, null, null] },
+      { id: 30, type: 'match', text: "Поєднайте виділені фрагменти простих (1–4) і складних (А – Д) речень за подібністю синтаксичного значення. <br><br> <img src='img/image30ukr.png' style='width:100%; max-width:600px; margin-bottom:15px; border-radius:4px;'>", rows: ["1. А в небі бриніли завзяті співці весняні – <strong style='font-size: 1.05em;'>незримі жайворонки</strong>.", "2. Родина приїхала в село <strong style='font-size: 1.05em;'>заради відпочинку</strong> від міської метушні.", "3. <strong style='font-size: 1.05em;'>Добре ставлячись до навколишнього середовища</strong>, ви робите планету кращим місцем для життя для всіх.", "4. Весна пробуджує <strong style='font-size: 1.05em;'>надії</strong> навіть у затятих скептиків."], cols: ["А Весною легше вірити, <strong style='font-size: 1.05em;'>що за темною смугою в житті неодмінно настане світла</strong>.", "Б У японців, <strong style='font-size: 1.05em;'>які уславилися своїм прагненням до єдності з природою</strong>, існує весняна традиція милування заквітчаною сакурою.", "В Кожен зобов’язаний піклуватися про довкілля, <strong style='font-size: 1.05em;'>що зробити цю планету чудовим місцем для життя</strong>.", "Г Люди відповідають за турботу про довкілля, <strong style='font-size: 1.05em;'>оскільки наш вплив на екосистеми є беззаперечним</strong>.", "Д Людина буде щасливішою в житті, <strong style='font-size: 1.05em;'>якщо зосередиться на тому</strong>, щоб давати, а не тільки споживати й отримувати."], correct: [1, 2, 4, 0], saved: false, selected: [null, null, null, null] },
+
+	],
     math: [
       { id: 1, type: 'choice', text: "На графіку відображено зміну робочої температури двигуна легкового автомобіля протягом 10 хвилин з моменту його запуску. Визначте за графіком кількість хвилин, протягом яких робоча температура двигуна була не більшою за 50 °C.", opts: ["7", "4", "3", "2", "5"], correct: 2, saved: false, selected: null, img: "image1.png" },
       { id: 2, type: 'choice', text: "Сума трьох кутів паралелограма дорівнює 280°. Визначте градусну міру більшого кута цього паралелограма.", opts: ["\\( 100^\\circ \\)", "\\( 80^\\circ \\)", "\\( 140^\\circ \\)", "\\( 40^\\circ \\)", "\\( 120^\\circ \\)"], correct: 0, saved: false, selected: null },
@@ -472,7 +518,7 @@
       { id: 13, type: 'choice', text: "Розв'яжіть систему рівнянь \\( \\begin{cases} 6(x + 5) + 10y = 3 \\\\ 2x = y + 4 \\end{cases} \\) Для одержаного розв’язку \\( (x_0; y_0) \\) укажіть суму \\( x_0 + y_0 \\).", opts: ["\\( -2,5 \\)", "\\( -3,5 \\)", "\\( 3,5 \\)", "\\( 6,5 \\)", "\\( -1,5 \\)"], correct: 0, saved: false, selected: null },
       { id: 14, type: 'choice', text: "Обчисліть суму перших десяти членів арифметичної прогресії \\( (a_n) \\), якщо \\( a_1 + a_{10} = -12 \\).", opts: ["\\( -120 \\)", "\\( -240 \\)", "\\( -12 \\)", "\\( 120 \\)", "\\( -60 \\)"], correct: 4, saved: false, selected: null },
       { id: 15, type: 'choice', text: "У ромбі \\( ABCD \\) діагональ \\( AC = m \\) утворює зі стороною \\( AB \\) кут \\( \\alpha \\) (див. рисунок). Знайдіть площу цього ромба.", opts: ["\\( \\frac{m^2 \\text{ tg } \\alpha}{2} \\)", "\\( m^2 \\sin \\alpha \\)", "\\( m^2 \\text{ tg } \\alpha \\)", "\\( \\frac{m^2 \\sin \\alpha}{2} \\)", "\\( \\frac{m^2}{2 \\text{ tg } \\alpha} \\)"], correct: 0, saved: false, selected: null, img: "image15.png" },
-      { id: 16, type: 'match', text: "У прямокутній декартовій системі координат на площині зображено замкнену ламану \\( ABCA \\), де \\( A(-1; 0), B(0; 1), C(1; 0) \\). Узгодьте функцію (1–3) з кількістю (А – Д) спільних точок її графіка та ламаної \\( ABCA \\).", img: "image16.png", rows: ["\\( y = 0 \\)", "\\( y = 1 - x^2 \\)", "\\( y = \\cos x \\)"], cols: ["А. жодної", "Б. лише одна", "В. лише дві", "Г. лише три", "Д. безліч"], correct: [4, 3, 1], saved: false, selected: [null, null, null] },
+      { id: 16, type: 'match', text: "У прямокутній декартовій системі координат на площині зображено замкнену ламану \\( ABC \\), де \\( A(-1; 0), B(0; 1), C(1; 0) \\). Узгодьте функцію (1–3) з кількістю (А – Д) спільних точок її графіка та ламаної \\( ABC \\).", img: "image16.png", rows: ["\\( y = 0 \\)", "\\( y = 1 - x^2 \\)", "\\( y = \\cos x \\)"], cols: ["А. жодної", "Б. лише одна", "В. лише дві", "Г. лише три", "Д. безліч"], correct: [4, 3, 1], saved: false, selected: [null, null, null] },
       { id: 17, type: 'match', text: "Установіть відповідність між виразом (1–3) та точкою (А – Д) на координатній прямій (див. рисунок), координатою якої є значення цього виразу, якщо \\( a = 2 \\).", img: "image17.png", rows: ["\\( -(\\sqrt{a})^2 \\)", "\\( 4a^{-1} \\)", "\\( 100^{\\lg a} \\)"], cols: ["А. K", "Б. L", "В. M", "Г. N", "Д. P"], correct: [1, 3, 4], saved: false, selected: [null, null, null] },
       { id: 18, type: 'match', text: "На стороні \\( BC \\) квадрата \\( ABCD \\) вибрано точку \\( K \\) так, що \\( BK = KC \\). Діагональ \\( BD \\) квадрата і відрізок \\( AK \\) перетинаються в точці \\( M \\). Периметр квадрата \\( ABCD \\) дорівнює 120 см. Узгодьте відрізок (1–3) із його довжиною (А – Д).", img: "image18.png", rows: ["BK", "BD", "MD"], cols: ["А. \\( 12\\sqrt{2} \\)", "Б. 15", "В. \\( 20\\sqrt{2} \\)", "Г. \\( 18\\sqrt{2} \\)", "Д. \\( 30\\sqrt{2} \\)"], correct: [1, 4, 2], saved: false, selected: [null, null, null] },
       { id: 19, type: 'input', text: "За перший рік із моменту створення музичний гурт дав 3 благодійні концерти. Кожного наступного року гурт проводив на 5 таких концертів більше, ніж попереднього. Скільки благодійних концертів дав гурт за 10 років свого існування?", correct: "255", saved: false, selected: "" },
@@ -493,7 +539,7 @@
       { id: 10, type: 'choice', text: "Про якого діяча йдеться в уривку з історичного джерела:<br><i>«Його геній виявився здатним поєднувати інтелектуальну напругу, спрямовану на створення фундаментальних біологічних концепцій, з тяжкою, жертовною діяльністю в галузі медицини. Так, працюючи в Одесі, провів дослід самозараження тифом, а в 1892 р., розробляючи способи боротьби з епідемією холери у Франції, випив культуру збудника цієї смертельної хвороби...»</i>?", opts: ["М. Гамалію", "М. Бекетова", "І. Мечнікова", "М. Пирогова"], correct: 2, saved: false, selected: null },
       { id: 11, type: 'choice', text: "На карті заштриховано районну спеціалізацію наприкінці XIX – на початку XX ст.:", opts: ["товарного садівництва", "товарного бурякового виробництва", "товарного виноробства", "товарного зернового виробництва"], correct: 1, saved: false, selected: null, img: "image11h.png" },
       { id: 12, type: 'choice', text: "Воєнні дії на території України завершилися в 1917 році", opts: ["Повною перемогою Російської імперії, яка анексувала Галичину, Буковину і Закарпаття", "Перемогою Австро-Угорщини, яка зайняла території Волині і Західного Поділля", "Втратою частини Галичини Австро-Угорщиною на користь Росії", "Фактичною нічиєю"], correct: 3, saved: false, selected: null },
-      { id: 13, type: 'choice', text: "«На Львів через Київ!» — під яким гаслом улітку 1919 р. здійснювала наступ", opts: ["Робітничо-селянська червона армія.", "Добровольча армія генерала А. Денікіна.", "Польська армія генерала Ю. Галлера.", "Українська галицька армія."], correct: 3, saved: false, selected: null },
+      { id: 13, type: 'choice', text: "«На Львів через Київ!» — під яким гаслом улітку 1919 р. здійснювала наступ", opts: ["Робітничо-селянська червона армія.", "Добровольча армія генерала А. Денікіна.", "Польська армія генерала Ю. Галлера.", "Українська галицька армія."], correct: 1, saved: false, selected: null },
       { id: 14, type: 'choice', text: "Із якою метою партійно-державне керівництво УСРР наприкінці 1920-х рр. розповсюджувало зображений плакат?", opts: ["Спонукати одноосібників добровільно вступати в колгоспи.", "Викликати у селян зневажливе ставлення до одноосібників.", "Посилити класову боротьбу на селі проти куркульства.", "Роз'яснити селянству завдання політики «ліквідації куркульства як класу»."], correct: 0, saved: false, selected: null, img: "image14h.png" },
       { id: 15, type: 'choice', text: "У якій країні відбувалися події?<br><i>«Тоді законів не було ніякого закону. Був воєнний стан і полна сваволя не тільки... жандармерії і таємної поліції, а й повітового префекта, бо всі зайди вважали себе тут абсолютними панами, а українців ні за що не мали в ролі паріїв...»</i>", opts: ["в УРСР", "у Польщі", "в Румунії", "в Чехословаччині"], correct: 2, saved: false, selected: null },
       { id: 16, type: 'choice', text: "Які нові області утворили в складі УРСР унаслідок територіального розширення СРСР 1939–1940 років?", opts: ["Волинська, Рівненська, Львівська, Станіславська, Ужгородська, Тернопільська, Чернівецька", "Луцька, Рівненська, Дрогобицька, Львівська, Дрогобицька, Станіславська, Тернопільська, Чернівецька, Ізмаїльська", "Львівська, Волинська, Львівська, Дрогобицька, Станіславська, Тернопільська, Чернівецька, Ізмаїльська", "Рівненська, Дрогобицька, Дрогобицька, Хмельницька, Львівська, Ізмаїльська, Чернівецька"], correct: 2, saved: false, selected: null },
@@ -510,70 +556,321 @@
       { id: 27, type: 'sequence', text: "Установіть послідовність ухвалення документів, уривки з яких процитовано", rows: ["", "", "", ""], cols: ["А «...Держави-члени... вирішили прийняти цей Статут, на основі якого і було створено Раду Європи... кожна держава-член... повинна визнавати принцип верховенства права...»", "Б «...військово-цивільні адміністрації — це тимчасові державні органи... для забезпечення... правопорядку, розвитку місцевого самоврядування... у районі проведення антитерористичної операції...»", "В «...Збройні Сили України мають таку структуру: Генеральний штаб... Види Збройних Сил: Сухопутні війська, Повітряні Сили, Військово-Морські Сили...»", "Г «...Верховна Рада України від імені Українського народу... прийняла цю Конституцію — Основний Закон України...»"], correct: [2, 0, 3, 1], saved: false, selected: [null, null, null, null] },
       { id: 28, type: 'multi', text: "Укажіть риси, характерні для економічного розвитку Наддніпрянської України в другій половині XIX ст.", opts: ["витіснення іноземного капіталу з провідних галузей промисловості", "домінування селянського господарства в товарному виробництві хліба", "завершення промислового перевороту, початок монополізації", "дефіцит робочої сили в сільськогосподарському виробництві", "бурхливий розвиток вуглевидобувної, гірничорудної та металургійної галузей", "будівництво розгалуженої системи залізниць", "розквіт чумацького промислу"], correct: [2, 4, 5], saved: false, selected: [] },
       { id: 29, type: 'multi', text: "Які твердження характеризують діяльність Української Центральної Ради?", opts: ["проголошення чотирьох Універсалів", "створення Директорії для повалення гетьманського режиму", "ведення переговорів з делегацією Тимчасового уряду", "створення регулярної Армії УНР шляхом загальної мобілізації", "підписання Брест-Литовського мирного договору", "формування Легіону Українських січових стрільців", "ліквідація поміщицького землеволодіння за законом 1920 року"], correct: [0, 2, 4], saved: false, selected: [] },
-      { id: 30, type: 'multi', text: "Проаналізуйте зображену картосхему. Картосхема дає змогу:", opts: ["простежити напрямки молдавського походу Б. Хмельницького в 1650 р.", "визначити шлях наступу козацького війська в 1648 р.", "відслідкувати напрямок походу козаків у 1651 р.", "окреслити територію Української козацької держави за Зборівським миром", "указати місце підписання перемир’я між Московською державою та Річчю Посполитою в 1656 р.", "показати місце битви, у якій козацьке військо зазнало поразки", "зазначити місце укладення договору, за яким територію Гетьманщини було обмежено Київським воєводством"], correct: [2, 5, 6], saved: false, selected: [], img: "image30h.png" }
-    ]
-  };
+      { id: 30, type: 'multi', text: "Проаналізуйте зображену картосхему. Картосхема дає змогу:", opts: ["простежити напрямки молдавського походу Б. Хмельницького в 1650 р.", "визначити шлях наступу козацького війська в 1648 р.", "відслідкувати напрямок походу козаків у 1651 р.", "окреслити територію Української козацької держави за Зборівським миром", "указати місце підписання перемир’я між Московською державою та Річчю Посполитою в 1656 р.", "показати місце битви, у якій козацьке військо зазнало поразки", "зазначити місце укладення договору, за яким територію Гетьманщини було обмежено Київським воєводством"], correct: [2, 5, 6], saved: false, selected: [], img: "image30h.png" },
+    ],
+eng: [
+        { 
+            id: 1, 
+            type: 'eng-match', 
+            text: "Read the advertisements. For questions (1–5) match the beginning and the ending of the statement below.",
+            questions: [
+                { text: "1. Which of the advertisements is about _______?", img: "eng_1.png" },
+                { text: "2. Which of the advertisements is about _______?", img: "eng_2.png" },
+                { text: "3. Which of the advertisements is about _______?", img: "eng_3.png" },
+                { text: "4. Which of the advertisements is about _______?", img: "eng_4.png" },
+                { text: "5. Which of the advertisements is about _______?", img: "eng_5.png" }
+            ],
+            opts: ["a rental offer", "a job vacancy", "a volunteering program", "shopping facilities", "a sports competition", "a family-run restaurant", "vacation activities", "an educational course"],
+            correct: [7, 6, 3, 5, 1],
+            saved: false, 
+            selected: [null, null, null, null, null]
+        },
+      {
+    id: 2,
+    type: 'eng-reading',
+    text: "",
+    readingText: `
+        <h3 style="text-align:center;">Briefly about Tattoos</h3>
+        <p>Are you interested in tattoos? You might be surprised to learn that tattooing is a tradition with deep historical roots, extending far beyond modern times. Although tattoos might seem like a recent invention, they are actually a significant part of human history. From ancient civilizations to the present day, people across the globe have been using tattoos for various reasons. In ancient cultures, tattoos were not just for personal expression but also served religious, cultural, and social purposes.</p>
+        
+        <p>The oldest known tattoos were found on Ötzi the Iceman, a preserved mummy dating back to around 3300 BC. Discovered in the Alps, Ötzi’s tattoos, made with charcoal, were strategically placed on his body, possibly for pain relief similar to acupuncture.</p>
+        
+        <p>In ancient Egypt, tattoos appeared on mummies from around 2000 BC. These tattoos were mainly found on women and may have been associated with fertility and spiritual protection. Some Egyptian figures even showed women with tattoos, suggesting that tattooing was an important part of their culture. The Nubian culture south of Egypt also practiced tattooing, with blue tattoos done in dot patterns. Similarly, the Scythians from central Asia had tattoos of mythical animals, with designs found on various body parts.</p>
+        
+        <p>Tattoos have always been more than just body art. In many indigenous cultures, they were markers of status and identity. Polynesian cultures, for instance, used elaborate tattoos as a symbol of social rank. In Japan, tattoos were once used to mark criminals, but later became associated with the Yakuza, a sign of commitment and status within the group.</p>
+        
+        <p>Throughout history, tattoos have also been used for protective purposes. Some ancient cultures believed that tattoos could provide health benefits or spiritual protection. For example, the tattoos on Ötzi the Iceman might have been related to therapeutic practices.</p>
+        
+        <p>Tattooing has evolved significantly over the centuries. While ancient methods involved tools like wooden and bronze needles, modern tattooing uses specialized equipment and inks. Today, tattoos are widely accepted as a form of personal adornment and self-expression, though their historical significance remains. You can even remove tattoos, a technology that would have been unheard of in ancient times. Cultural attitudes have shifted, with tattoos becoming more mainstream and less stigmatized than in the past.</p>
+        
+        <p>Despite the many changes, the reasons people get tattoos today — whether for personal, spiritual, or aesthetic reasons — are not so different from those of our ancient ancestors. The art of tattooing continues to reflect our ongoing desire to express and define ourselves through permanent marks on our skin.</p>
+    `,
+    questions: [
+        {
+            qText: "6. How did ancient cultures primarily use tattoos?",
+            opts: [
+                "Solely for decorative purposes.",
+                "As a form of punishment.",
+                "For spiritual and social reasons.",
+                "Primarily as a status symbol for the wealthy."
+            ]
+        },
+        {
+            qText: "7. Why might the tattoos on Ötzi the Iceman have been placed on his body?",
+            opts: [
+                "To mark his social status.",
+                "As a form of artistic expression.",
+                "To ease discomfort or pain.",
+                "To symbolize his religious beliefs."
+            ]
+        },
+        {
+            qText: "8. How did the tattoos of the Nubian culture differ from those of the Egyptians?",
+            opts: [
+                "They were designed with a series of small, repetitive marks.",
+                "They were exclusively done on males.",
+                "They used different pigments and techniques.",
+                "They were only found on statues and artwork."
+            ]
+        },
+        {
+            qText: "9. In the text, what does 'indigenous' most closely mean?",
+            opts: [
+                "Ancient and outdated.",
+                "Native or originating from a particular place.",
+                "Modern and contemporary.",
+                "Imported or foreign."
+            ]
+        },
+        {
+            qText: "10. How have cultural attitudes towards tattoos changed over time?",
+            opts: [
+                "Tattoos have consistently been seen as a negative symbol.",
+                "There has been no significant change in tattoo perceptions.",
+                "Tattoos are now universally accepted in all cultures.",
+                "Tattoos have become more socially acceptable in recent decades."
+            ]
+        }
+    ],
+    // Твої відповіді CCABD: C=2, C=2, A=0, B=1, D=3
+    correct: [2, 2, 0, 1, 3], 
+    selected: [null, null, null, null, null],
+    saved: false
+     },
+        {
+    id: 3,
+    type: 'eng-match',
+    text: "",
+    questions: [
+        { 
+            text: "<b>11.</b> Marie Sklodowska, born in Warsaw in 1867, was the youngest of five children. Her parents were both teachers, and her father taught math and physics. Marie was passionate about these subjects but faced gender barriers. She even attended lectures at Krakow University dressed as a man until she was caught. Marie and her sister joined the Flying University, a secret school that admitted women. Marie Curie moved to Paris in 1891, earning degrees in mathematics and physics while supporting herself as a tutor. She became the University of Paris's first female professor and married Pierre Curie in 1895. Marie's research on radioactivity led to discoveries of polonium and radium and the development of radiotherapy, a key cancer treatment. She was the first person to win two Nobel Prizes, in Physics (1903) and Chemistry (1911).", 
+            img: "" 
+        },
+        { 
+            text: "<b>12.</b> Frida Kahlo, a renowned 20th-century artist, led a life full of challenges and triumphs that deeply influenced her art. Born in Mexico City in 1907, Frida faced many hardships, including a severe bus accident in 1925 that led to chronic pain and medical issues. During her recovery, she discovered her passion for painting. Kahlo's art is known for its unique style and vivid exploration of Mexican culture, surrealism, and personal pain. Her self-portraits, often featuring symbolic elements, provide an intimate look into her life and struggles. She also had a complex relationship with fellow artist Diego Rivera, which deeply influenced her work. Despite her early death in 1954, Kahlo's legacy endures, with her art continuing to inspire and captivate audiences worldwide.", 
+            img: "" 
+        },
+        { 
+            text: "<b>13.</b> Sophie Germain's passion for mathematics faced severe obstacles early in her life. Unable to attend university due to gender restrictions, Germain adopted the identity of a male student who had left using his lecture notes and submitting work under his name. Her true identity was revealed when a professor, impressed by the sudden improvement in the student's work, requested a meeting. Fortunately, the professor was supportive and encouraged her. Germain, working from home with limited resources, became deeply interested in number theory. She boldly corresponded with Carl Gauss, a leading mathematician of the time, under her male pseudonym. After three years, Gauss was astonished to discover her true identity and praised her to his colleagues. Germain became the first woman to win a prize from France's Royal Academy.", 
+            img: "" 
+        },
+        { 
+            text: "<b>14.</b> Fanny Mendelssohn, a gifted German pianist and composer, was Felix Mendelssohn's elder sister. She displayed exceptional talent from a young age, even memorizing J. S. Bach's Well-Tempered Clavier by the age of 13. Felix admitted she was a superior pianist and his chief musical advisor until he left home. Despite her talent, their father was merely tolerant, and Felix believed she was too constrained by traditional female roles. Queen Victoria mistakenly attributed the Mendelssohn song 'Italien' to Felix, discovering later it was Fanny's work. Fanny composed 460 pieces, including the Piano Trio in D, Quartet in E-flat, Piano Sonata in G minor, and Das Jahr. She died of a stroke while conducting one of Felix's oratorios.", 
+            img: "" 
+        },
+        { 
+            text: "<b>15.</b> In the 19th century, long before computers existed, Augusta Ada Byron became the first person to be called a 'computer programmer.' Born to poet Lord Byron and Anne Milbanke, Ada was raised by her mother, who insisted she study mathematics, a rare pursuit for women at the time. At 17, Ada met Charles Babbage, who mentored her in advanced math. Ada translated and expanded on an article about Babbage's Analytical Engine, envisioning it could handle more than just numbers, including music. Her concept of looping commands laid the groundwork for modern computing. Her contributions went largely unrecognized until the 1950s, leading to the naming of the programming language 'Ada' in her honor in 1980.", 
+            img: "" 
+        },
+        { 
+            text: "<b>16.</b> Amelia Earhart was a pioneering American aviator who set numerous records and championed women in aviation. Born on July 24, 1897, in Atchison, Kansas, Earhart defied gender norms, excelling in basketball and auto repair, and later worked as a Red Cross nurse during World War I. Captivated by aviation, she took flying lessons in 1921 and purchased her first plane, nicknamed 'the Canary.' Earhart made history by flying solo across the Atlantic in 1932 and from Hawaii to the U.S. mainland in 1935. In 1929, she helped found the Ninety-Nines, an organization for female pilots. In 1937, Earhart vanished over the Pacific Ocean on July 2. She was officially declared lost at sea on July 19, 1937.", 
+            img: "" 
+        }
+    ],
+    opts: [
+        "A) designed the first solar heating system",
+        "B) made significant contributions to cancer treatment and won two prestigious international awards",
+        "C) coined the terms 'bug' and 'debugging' when she had to remove moths from the device",
+        "D) was recognized by her relative as a greater instrumentalist",
+        "E) had a relative who convinced her to go into science",
+        "F) disguised herself as a student of the opposite gender to overcome university access restrictions",
+        "G) went through a serious accident that influenced her artistic career",
+        "H) excelled in sports and mechanics in the young age"
+    ],
+    correct: [1, 6, 5, 3, 4, 7], 
+    selected: [null, null, null, null, null, null],
+    saved: false
+},
 
-  let currentSub = 'math', timeLeft = 7200, timerInterval = null, activeMatch = null;
+{
+    id: 4,
+    type: 'eng-gap-fill',
+    text: "",
+    parts: [
+        "When you don't have the right tool, duct tape often saves the day. People use it for almost anything - from holding car mirrors in place",
+        ". Duct tape's story began during World War II. The U.S. military needed a waterproof tape",
+        ". Researchers at Johnson & Johnson's Permacel division made a special tape",
+        ". The tape was strong, water-resistant, and easy to tear into strips, which",
+        ". Soldiers liked it so much they nicknamed it 'duck' tape because it reminded them of a duck's waterproof feathers. After the war, many veterans started working in construction and brought the tape with them. It became a common item in many industries,",
+        ". Manufacturers soon made it with a silver top layer to match metal ducts, and duct tape became the reliable fix-all that we know today. The story of duct tape shows how a simple invention",
+        "."
+    ],
+    opts: [
+        "its usefulness and adaptability",
+        "to making creative items like duct tape wallets or even shoes",
+        "and quickly found new applications",
+        "and highlights its creative and practical uses",
+        "started as a military tool and became widely used",
+        "by changing medical tape",
+        "was well-suited for various needs",
+        "to keep ammunition cases dry"
+    ],
+    correct: [1, 7, 5, 6, 2, 4],
+    saved: false,
+    selected: [null, null, null, null, null, null]
+},
 
-  // КРОК 1: ПЕРЕВІРКА ПАРОЛЯ І ПЕРЕХІД ДО ПРАВИЛ
+{
+    id: 5,
+    type: 'eng-gap-fill',
+    startNumber: 23,
+    text: "",
+    parts: [
+        "For seven years, Finland has been the world's happiest country, (23) ",
+        " the UN's World Happiness Report. In Helsinki, this happiness is most (24) ",
+        " during summer, when long daylight hours spotlight the city's blend of nature and urban life. With 300 islands, two national parks (25) ",
+        " by public transport, and (26) ",
+        " green spaces, Helsinki is a paradise for outdoor lovers and sauna enthusiasts. Professional 'happiness hacker' Lena Salmi, who (27) ",
+        " outdoor city tours, highlights the city's happiness hotspots, emphasizing the calming influence of the sea. Salmi, a sports journalist turned happiness expert, found her joy in reconnecting with Helsinki's natural beauty."
+    ],
+    opts: [
+        [" topping", " lowering", " avoiding", " surpassing"],
+        [" hidden", " distant", " evident", " unapparent"], 
+        [" obvious", " accessible", " booked", " adoptable"], 
+        [" abundant", " generous", " deep", " disruptive"], 
+        [" views", " guides", "helps", " attends"] 
+    ],
+    correct: [0, 2, 1, 0, 1], 
+    saved: false,
+    selected: [null, null, null, null, null]
+},
+{
+            id: 6,
+            type: 'eng-gap-fill',
+            startNumber: 28,
+            text: "",
+            parts: [
+                "Recently a London family (28) ",
+                " with their lost cat, Lily, who went missing last month and was adopted by another family. Lily was last seen (29) ",
+                " Halloween, and her original owners, the Cronin family, initially thought she was hiding in their house. They began searching as soon as they realized she was gone and (30) ",
+                " found her on the London Animal Care Centre's adoption website. Katie Cronin called the centre the next day, only to discover Lily (31) ",
+                ". After CTV News aired a story about the situation, Lily's new owners contacted the Cronins. Lily has since returned to the Cronin family, and her brief owners received an offer to adopt (32) ",
+                " cat free of charge."
+            ],
+            opts: [
+                [" reunited", " has reunited", " was reuniting", " get reunited"], 
+                [" between", " about", " around", " approximately"],             
+                [" furthermore", " expectedly", " eventually", " lately"],      
+                [" is adopted", " was adopting", " adopted", " had been adopted"], 
+                [" other", " another", " the others", " same"]                 
+            ],
+            correct: [1, 2, 2, 3, 1],
+            saved: false,
+            selected: [null, null, null, null, null]
+        }
+    ] // Закриваємо масив 'eng'
+}; // <--- ОСЬ ЦЯ ДУЖКА БУЛА ПРОПУЩЕНА! Вона закриває весь об'єкт 'const data = {'
+
+// Тепер змінні будуть працювати без помилок
+let currentSub = 'ukr', 
+    timeLeft = 7200, 
+    timerInterval = null, 
+    activeMatch = null, 
+    isSecondStage = false;
+
   function showRules() {
     const loginVal = document.getElementById('login-input').value;
     const passVal = document.getElementById('pass-input').value;
     const user = users.find(u => u.login === loginVal && u.pass === passVal);
-    
     if (user) {
       document.querySelectorAll('.user-name-display').forEach(el => el.textContent = user.name);
       document.getElementById('auth-page').style.display = 'none';
       document.getElementById('rules-page').style.display = 'flex';
-    } else {
-      alert("Невірний логін або пароль!");
-    }
+    } else { alert("Невірний логін або пароль!"); }
   }
 
-  // КРОК 2: ПІДТВЕРДЖЕННЯ ПРАВИЛ І ПЕРЕХІД ДО ВИБОРУ ТЕСТУ
   function showConfirm() {
     document.getElementById('rules-page').style.display = 'none';
-    document.getElementById('confirm-page').style.display = 'flex';
+    if (isSecondStage) document.getElementById('pre-start-page').style.display = 'flex';
+    else document.getElementById('confirm-page').style.display = 'flex';
   }
 
-  function showPreStart() { document.getElementById('confirm-page').style.display = 'none'; document.getElementById('pre-start-page').style.display = 'flex'; }
-  function showInstructionSlide() { document.getElementById('pre-start-page').style.display = 'none'; document.getElementById('instruction-page').style.display = 'flex'; }
+  function showPreStart() {
+    isSecondStage = false;
+    document.getElementById('confirm-page').style.display = 'none';
+    document.getElementById('pre-start-page').style.display = 'flex';
+  }
+
+  function startSecondStage() {
+    isSecondStage = true;
+    timeLeft = 7200; 
+    
+    document.getElementById('confirm-page').style.display = 'none';
+    document.getElementById('pre-start-page').style.display = 'flex';
+    
+    const clock = document.getElementById('clock-val');
+    if (clock) clock.textContent = "2:00:00";
+}
+
+  function showInstructionSlide() {
+    document.getElementById('pre-start-page').style.display = 'none';
+    document.getElementById('instruction-page').style.display = 'flex';
+    
+    const instrTitle = document.querySelector('.instr-title');
+    const stageText = isSecondStage ? "(2 Етап)" : "(1 Етап)";
+    instrTitle.textContent = `Тест "НМТ-2026_демоверсія" ${stageText} обмежений у часі (2 години).`;
+}
 
   function startTest() {
     document.getElementById('instruction-page').style.display = 'none';
     document.getElementById('test-page').style.display = 'flex';
+    timeLeft = 7200;
+    const switcher = document.getElementById('sub-switcher-area');
+    
+    if (isSecondStage) {
+      currentSub = 'eng';
+      switcher.innerHTML = `
+        <div class="sub-btn nav-arrows" onclick="performSwitch('eng')">‹ Назад</div>
+        <div class="sub-btn" id="btn-eng" onclick="performSwitch('eng')">Англійська мова</div>
+        <div class="sub-btn" id="btn-hist" onclick="performSwitch('hist')">Історія України</div>
+        <div class="sub-btn nav-arrows" style="border-right:none;" onclick="performSwitch('hist')">Вперед ›</div>`;
+    } else {
+      currentSub = 'ukr';
+      switcher.innerHTML = `
+        <div class="sub-btn nav-arrows" onclick="performSwitch('ukr')">‹ Назад</div>
+        <div class="sub-btn" id="btn-ukr" onclick="performSwitch('ukr')">Українська мова</div>
+        <div class="sub-btn" id="btn-math" onclick="performSwitch('math')">Математика</div>
+        <div class="sub-btn nav-arrows" style="border-right:none;" onclick="performSwitch('math')">Вперед ›</div>`;
+    }
+
     if (!timerInterval) {
       timerInterval = setInterval(() => {
         if (timeLeft > 0) {
           timeLeft--;
           let h = Math.floor(timeLeft / 3600), m = Math.floor((timeLeft % 3600) / 60), s = timeLeft % 60;
-          document.getElementById('clock-val').textContent = `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+          let clock = document.getElementById('clock-val');
+          if(clock) clock.textContent = `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
         }
       }, 1000);
     }
-    render();
-  }
-
-  function switchSubject(sub) {
-    if (sub === currentSub) return;
-    const unsavedInCurrent = data[currentSub].filter(q => !q.saved);
-    if (unsavedInCurrent.length > 0) {
-      const listEl = document.getElementById('switch-unsaved-list');
-      const subName = currentSub === 'math' ? 'Математика' : 'Історія України';
-      listEl.innerHTML = unsavedInCurrent.map(q => `<div>${subName}: Завдання ${q.id}</div>`).join('');
-      document.getElementById('switch-overlay').style.display = 'flex';
-      document.getElementById('btn-force-switch').onclick = function() {
-        closeSwitchModal();
-        performSwitch(sub);
-      };
-    } else { performSwitch(sub); }
+    performSwitch(currentSub);
   }
 
   function performSwitch(sub) {
-    currentSub = sub;
-    document.getElementById('btn-math').classList.toggle('active', sub === 'math');
-    document.getElementById('btn-hist').classList.toggle('active', sub === 'hist');
+    const unsavedInCurrent = data[currentSub].filter(q => !q.saved);
+    if (unsavedInCurrent.length > 0 && sub !== currentSub) {
+      document.getElementById('switch-unsaved-list').innerHTML = unsavedInCurrent.map(q => `<div>Завдання ${q.id}</div>`).join('');
+      document.getElementById('switch-overlay').style.display = 'flex';
+      document.getElementById('btn-force-switch').onclick = () => { closeSwitchModal(); currentSub = sub; updateUI(); };
+    } else { currentSub = sub; updateUI(); }
+  }
+
+  function updateUI() {
+    document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
+    if (document.getElementById(`btn-${currentSub}`)) document.getElementById(`btn-${currentSub}`).classList.add('active');
+    
+    const subLabel = currentSub === 'ukr' ? 'Українська мова' : currentSub === 'math' ? 'Математика' : currentSub === 'hist' ? 'Історія України' : 'Англійська мова';
+    document.getElementById('path-text').innerHTML = `Іспит &nbsp;›&nbsp; НМТ-2026_демоверсія &nbsp;›&nbsp; ${subLabel}`;
     render();
     window.scrollTo(0,0);
   }
@@ -582,12 +879,30 @@
   function closeFinishModal() { document.getElementById('finish-overlay').style.display = 'none'; }
   function openMathDocs() { window.open("dv.pdf", "_blank", "width=900,height=700"); }
 
-  function render() {
+function render() {
     const qList = document.getElementById('q-list');
-    
     qList.innerHTML = data[currentSub].map((q, i) => {
-      let qLayout = q.img ? `<div class="flex-q"><div class="text-q">${q.text}</div><div class="img-q"><img src="img/${q.img}"></div></div>` : `<div>${q.text}</div>`;
-      
+        let qLayout = "";
+        
+// 1. ЛОГІКА ЗАГОЛОВКІВ ТА КАРТИНОК
+        if (q.img) {
+            if (q.type === 'eng-match') {
+                qLayout = ""; 
+            } else {
+                qLayout = `
+                <div class="vertical-q-container" style="display: flex; flex-direction: column; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div class="text-q" style="width: 100%; font-size: 1.05rem; line-height: 1.5; text-align: left;">${q.text}</div>
+                    <div class="img-q" style="width: 100%; display: flex; justify-content: center;">
+                        <img src="img/${q.img}" style="max-width: 400px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                    </div>
+                </div>`;
+            }
+        } else {
+            qLayout = (q.type === 'eng-match') ? "" : `<div class="text-q">${q.text}</div>`;
+        }
+
+        // 2. ІНТРО-КАРТКИ (ІНСТРУКЦІЇ)
+        
       let headerText = "";
       if(currentSub === 'math') {
         if(q.id === 1) headerText = `<div class="intro-card" style="margin-bottom: 20px; border: 1px solid #bbb; background: #fdfdfd; padding: 25px 40px; border-radius: 4px; text-align: center; line-height: 1.8; font-weight: 500; font-size: 0.95rem; color: #333;">Завдання 1– 15 мають по п’ять варіантів відповіді, з яких лише один правильний. Виберіть правильний, на Вашу думку, варіант відповіді й натисніть курсором на значок <span class="radio-icon"></span>. Ви можете замінити дібраний варіант відповіді на інший. Позначений Вами остаточний варіант відповіді <span class="radio-icon active"></span> НАДІШЛІТЬ, натиснувши курсором на кнопку под завданням.</div>`;
@@ -599,124 +914,375 @@
         if(q.id === 25) headerText = `<div class="intro-card" style="margin-bottom: 20px; border: 1px solid #bbb; background: #fdfdfd; padding: 25px 40px; border-radius: 4px; text-align: center; line-height: 1.8; font-weight: 500; font-size: 0.95rem; color: #333;">У завданнях на встановлення правильної послідовності до кожного з фрагментів інформації, позначених цифрами, доберіть один правильний, на Вашу думку, варіант відповіді, позначений буквою/номером. Для цього натисніть курсором на нього, а потім — на порожнє поле навпроти інформації, позначеної цифрою. Виберіть новий варіант відповіді. Після остаточного вибору НАДІШЛІТЬ відповідь, натиснувши курсором на кнопку під завданням.</div>`;
         if(q.id === 28) headerText = `<div class="intro-card" style="margin-bottom: 20px; border: 1px solid #bbb; background: #fdfdfd; padding: 25px 40px; border-radius: 4px; text-align: center; line-height: 1.8; font-weight: 500; font-size: 0.95rem; color: #333;">Завдання 28–30 мають по сім варіантів відповіді, з яких лише ТРИ правильні. Виберіть правильні, на Вашу думку, варіанти відповідей і натисніть курсором на значки <input type="checkbox" disabled>. Ви можете замінити дібрані варіанти відповідей на інші. Остаточні варіанти відповідей, позначені Вами <input type="checkbox" checked disabled>, НАДІШЛІТЬ, натиснувши курсором на кнопку під завданням.</div>`;
       }
+        else if (currentSub === 'ukr') { if (q.id === 1) { headerText = `<div class="intro-card" style="margin-bottom: 20px; border: 1px solid #bbb; background: #fdfdfd; padding: 25px 40px; border-radius: 4px; text-align: center; line-height: 1.8; font-weight: 500; font-size: 0.95rem; color: #333;">Завдання 1–20 мають по чотири варіанти відповіді, з яких лише один правильний. Виберіть правильний варіант, на Вашу думку, і натисніть «Зберегти відповідь».</div>`; } 
+		else if (q.id === 21) { 
+    headerText = `<div class="intro-card" style="text-align: left; background: #fdfdfd; border: 1px solid #bbb; padding: 25px 40px; border-radius: 4px; line-height: 1.9; color: #333;">
+        <p style="text-align:center; font-weight:700; margin-top:0; font-size: 1.1rem;">Завдання 21-25 стосуються речень, що первісно становили зв'язаний текст. Прочитайте речення й виконайте завдання до них</p>
+        
+        <span style="font-size: 1.2rem;">Δ</span> <i>Ці безпечні <b style="color: #000; text-shadow: 0.5px 0px 0px #000;">простори</b>, як і попередній, створено насамперед для дітей, облаштовано під їхні потреби.</i><br>
+        
+        <span style="font-size: 1.2rem;">○</span> <i>Ще два соціальні <b style="color: #000; text-shadow: 0.5px 0px 0px #000;">хаби</b>, дружні до матері та дитини, відтепер працюють на Одещині.</i><br>
+        
+        <span style="font-size: 1.2rem;">◇</span> <i>А поки діти граються чи навчаються, дорослі можуть отримати допомогу соціального менеджера, юриста, психолога та інші <b style="color: #000; text-shadow: 0.5px 0px 0px #000;">послуги</b>.</i><br>
+        
+        <span style="font-size: 1.2rem;">□</span> <i>У затишній атмосфері, з уважними вихователями та психологом, діти зможуть перебувати деякий <b style="color: #000; text-shadow: 0.5px 0px 0px #000;">час</b> поки батьки вирішуватимуть свої справи.</i><br>
+        
+        <span style="font-size: 1.2rem;">▽</span> <i>Маленьким відвідувачам пропонують цікаві <b style="color: #000; text-shadow: 0.5px 0px 0px #000;">заняття</b>, розвивальні ігри, малювання, майстер-класи.</i>
+    </div>`; 
+}
+		else if (q.id === 26) { headerText = `<div class="intro-card" style="margin-bottom: 20px; border: 1px solid #bbb; background: #fff; padding: 20px 30px; border-radius: 4px; text-align: left; line-height: 1.6; font-weight: 700; font-size: 1rem; color: #000;">У завданнях 26–30 до кожного із чотирьох фрагментів інформації, позначених цифрою, доберіть один правильний, на Вашу думку, варіант, позначений буквою. Поставте позначки в таблицях відповідей до завдань на перетині відповідних рядків (цифри) і колонок (букви).</div>`; } }
+ 
+     if (currentSub === 'eng') {
+            if (q.id === 1) {
+                headerText = `
+                <div class="eng-main-header" style="text-align: center; margin-bottom: 20px;">
+                    <div style="background: #fff; border: 1px solid #bbb; padding: 10px; border-radius: 4px; display: inline-block; min-width: 250px;">
+                        <h3 style="margin: 0; font-size: 1.1rem; color: #333; text-transform: uppercase;">Частина "ЧИТАННЯ"</h3>
+                        <p style="margin: 5px 0 0; font-weight: bold; color: #333;">Reading</p>
+                    </div>
+                </div>
+                <div class="intro-card" style="margin-bottom: 20px; border: 1px solid #bbb; background: #fdfdfd; padding: 25px 40px; border-radius: 4px; color: #333;">
+                    <p style="font-weight: bold; margin-top: 0; text-align: left;">Task 1</p>
+                    <p style="font-weight: bold; text-align: center; line-height: 1.8;">
+                        Read the advertisements. For questions (1–5) match the beginning and the ending of the statement below, according to each advertisement. There are three choices you do not need to use.<br>
+                        Confirm your choice by pressing the SEND button.
+                    </p>
+                </div>`;
+            } 
+            else if (q.id === 2) { 
+                headerText = `
+                <div class="intro-card" style="margin-bottom: 20px; border: 1px solid #bbb; background: #fdfdfd; padding: 25px 40px; border-radius: 4px; color: #333;">
+                    <p style="font-weight: bold; margin-top: 0; text-align: left;">Task 2</p>
+                    <p style="font-weight: bold; text-align: center; line-height: 1.8;">
+                        Read the text. For questions (6–10) choose the correct answer.<br>
+                        Confirm your choice by pressing the SEND button.
+                    </p>
+                </div>`;
+            }
+            else if (q.id === 3) { 
+                headerText = `
+                <div class="intro-card" style="margin-bottom: 20px; border: 1px solid #bbb; background: #fdfdfd; padding: 25px 40px; border-radius: 4px; color: #333;">
+                    <p style="font-weight: bold; margin-top: 0; text-align: left;">Task 3</p>
+                    <p style="font-weight: bold; text-align: center; line-height: 1.8;">
+                        Read the texts. For questions (11–16) match the beginning and the ending of the statement below, according to each text. There are two choices you do not need to use.<br>
+                        Confirm your choice by pressing the SEND button.
+                    </p>
+                </div>`;
+            }
+            else if (q.id === 4) { 
+                headerText = `
+                <div class="intro-card" style="margin-bottom: 20px; border: 1px solid #bbb; background: #fdfdfd; padding: 25px 40px; border-radius: 4px; color: #333;">
+                    <p style="font-weight: bold; margin-top: 0; text-align: left;">Task 4</p>
+                    <p style="font-weight: bold; text-align: center; line-height: 1.8;">
+                        Read the text. Choose the correct answer which best fits each space (17–22). There are two choices you do not need to use. <br>
+                        Confirm your choice by pressing the SEND button.
+                    </p>
+                </div>`;
+            }
+            else if (q.id === 5) { 
+                headerText = `
+                <div class="eng-main-header" style="text-align: center; margin-bottom: 20px;">
+                    <div style="background: #fff; border: 1px solid #bbb; padding: 10px; border-radius: 4px; display: inline-block; min-width: 250px;">
+                        <h3 style="margin: 0; font-size: 1.1rem; color: #333; text-transform: uppercase;">Частина "ВИКОРИСТАННЯ МОВИ"</h3>
+                        <p style="margin: 5px 0 0; font-weight: bold; color: #333;">Use of English</p>
+                    </div>
+                </div>
+                <div class="intro-card" style="margin-bottom: 20px; border: 1px solid #bbb; background: #fdfdfd; padding: 25px 40px; border-radius: 4px; color: #333;">
+                    <p style="font-weight: bold; margin-top: 0; text-align: left;">Task 5</p>
+                    <p style="font-weight: bold; text-align: center; line-height: 1.8;">
+                        Read the text. For questions (23 – 27) choose the correct answer. <br>
+                        Confirm your choice by pressing the SEND button.
+                    </p>
+                </div>`;
+            }
+            else if (q.id === 6) { 
+                headerText = `
+                <div class="intro-card" style="margin-bottom: 20px; border: 1px solid #bbb; background: #fdfdfd; padding: 25px 40px; border-radius: 4px; color: #333;">
+                    <p style="font-weight: bold; margin-top: 0; text-align: left;">Task 6</p>
+                    <p style="font-weight: bold; text-align: center; line-height: 1.8;">
+                        Read the text. For questions (28–32) choose the correct answer. <br>
+                        Confirm your choice by pressing the SEND button.
+                    </p>
+                </div>`;
+            }
+        }
 
-      if (q.type === 'match' || q.type === 'sequence') {
-        return headerText + `
-          <div class="card" id="card-${i}">
-            <div style="font-weight:700; margin-bottom:15px; font-size:1.1rem;">Завдання ${q.id}.</div>
-            <div style="margin-bottom:20px;">${qLayout}</div>
-            <div class="matching-flex-container">
-              <div class="matching-left-area">
-                ${q.rows.map((r, rIdx) => `
-                  <div class="match-row">
+
+
+        // 3. ЛОГІКА ВАРІАНТІВ ВІДПОВІДІ
+        let optsHtml = "";
+        
+        // ТИП 1: Відповідності (твої бабли)
+        if (q.type === 'match' || q.type === 'sequence') {
+            optsHtml = `<div class="matching-flex-container">
+                <div class="matching-left-area">${q.rows.map((r, rIdx) => `
+                <div class="match-row">
                     <div class="matching-text-bubble"><b>${rIdx+1}.</b> ${r}</div>
                     <div class="matching-arrow">→</div>
-                    <div class="matching-drop-field ${activeMatch?.q === i && activeMatch?.r === rIdx ? 'active' : ''}" onclick="setActiveMatch(${i}, ${rIdx})">
-                      <span class="matching-val-text">${q.selected[rIdx] !== null ? ['А', 'Б', 'В', 'Г', 'Д'][q.selected[rIdx]] : ''}</span>
-                      ${q.selected[rIdx] !== null ? `<span class="matching-clear-btn" onclick="event.stopPropagation(); clearMatch(${i}, ${rIdx})">✕</span>` : ''}
+                    <div class="matching-drop-field ${activeMatch?.q===i && activeMatch?.r===rIdx ? 'active' : ''}" onclick="window.setActiveMatch(${i}, ${rIdx})">
+                        <span class="matching-val-text">${q.selected[rIdx]!==null?['А','Б','В','Г','Д'][q.selected[rIdx]]:''}</span>
+                        ${q.selected[rIdx]!==null?`<span style="color:red; margin-left:10px; cursor:pointer;" onclick="event.stopPropagation(); window.clearMatch(${i}, ${rIdx})">✕</span>`:''}
                     </div>
-                  </div>
-                `).join('')}
-              </div>
-              <div class="matching-right-area">
-                ${q.cols.map((c, cIdx) => `
-                  <div class="matching-opt-btn" onclick="applyMatch(${cIdx})">${c}</div>
-                `).join('')}
-              </div>
+                </div>`).join('')}</div>
+                <div class="matching-right-area">${q.cols.map((c, cIdx) => `<div class="matching-opt-btn" onclick="window.applyMatch(${cIdx})">${c}</div>`).join('')}</div>
+            </div>`;
+        } 
+        // ТИП 2: Англійські оголошення (Task 1)
+        else if (q.type === 'eng-match') {
+            optsHtml = q.questions.map((quest, subIdx) => `
+                <div class="eng-sub-block" style="margin-bottom: 40px; border-bottom: 2px solid #f0f0f0; padding-bottom: 25px;">
+                    <div style="font-size: 1.05rem; margin-bottom: 15px;">${quest.text}</div>
+                    ${quest.img ? `<img src="img/${quest.img}" style="max-width: 450px; border: 1px solid #ccc; border-radius: 4px; display: block; margin-bottom:20px;">` : ''}
+                    <select class="eng-select-field" style="padding:10px; width:100%; max-width:350px;" onchange="window.selectEngMatch(${i}, ${subIdx}, this.value)">
+                        <option value="">Оберіть опцію</option>
+                        ${q.opts.map((o, oi) => `<option value="${oi}" ${q.selected[subIdx] == oi ? 'selected' : ''}>${o}</option>`).join('')}
+                    </select>
+                </div>`).join('');
+        } 
+        // ТИП 3: Читання англійська (Task 2)
+        else if (q.type === 'eng-reading') {
+            optsHtml = `
+            <div class="reading-container">
+                <div class="reading-text-box" style="background:#f9f9f9; padding:20px; border:1px solid #ccc; margin-bottom:20px; line-height:1.6; max-height:400px; overflow-y:auto;">
+                    ${q.readingText}
+                </div>
+                ${q.questions.map((subQ, subIdx) => `
+                    <div style="margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+                        <p style="font-weight:600;">${subQ.qText}</p>
+                        ${subQ.opts.map((opt, optIdx) => `
+                            <label style="display:block; margin-bottom:8px; cursor:pointer;">
+                                <input type="radio" name="reading_${i}_${subIdx}" ${q.selected[subIdx] === optIdx ? 'checked' : ''} onchange="window.selectEngReading(${i}, ${subIdx}, ${optIdx})">
+                                ${['A','B','C','D'][optIdx]}. ${opt}
+                            </label>`).join('')}
+                    </div>`).join('')}
+            </div>`;
+        }
+        // ТИП 4: Текст із пропусками (Task 4)
+        else if (q.type === 'eng-gap-fill') {
+            let fullText = "";
+            q.parts.forEach((part, subIdx) => {
+                fullText += part; 
+                if (subIdx < q.selected.length) {
+                    // Визначаємо правильний набір варіантів:
+                    // Якщо opts[subIdx] - це масив, беремо його. Якщо ні - беремо весь opts.
+                    const currentOpts = Array.isArray(q.opts[0]) ? q.opts[subIdx] : q.opts;
+                    const currentNum = (q.startNumber || 17) + subIdx;
+
+                    fullText += `
+                        <select onchange="window.selectSubQuestion(${i}, ${subIdx}, this.value)" 
+                                style="padding: 2px 4px; border: 1px solid #aaa; border-radius: 4px; cursor: pointer; font-family: inherit; font-size: 1rem; margin: 0 2px;">
+                            <option value="">${currentNum}</option>
+                            ${currentOpts.map((o, oi) => `<option value="${oi}" ${q.selected[subIdx] == oi ? 'selected' : ''}>${o}</option>`).join('')}
+                        </select>`;
+                }
+            });
+            optsHtml = `<div class="gap-fill-container" style="line-height: 2.2; font-size: 1.1rem; text-align: justify; background: #fff; padding: 25px; border: 1px solid #ddd; border-radius: 8px;">${fullText}</div>`;
+        }
+        // ТИП 5: Мультивибір (3 з 7)
+        else if (q.type === 'multi') {
+            optsHtml = q.opts.map((o, oi) => `
+                <label class="option-item">
+                    <input type="checkbox" ${q.selected.includes(oi) ? 'checked' : ''} onchange="toggleMulti(${i}, ${oi})"> ${o}
+                </label>`).join('');
+        } 
+       // ТИП 6: Введення тексту (числа)
+     else if (q.type === 'input') {
+    optsHtml = `
+        <div class="input-answer-box">
+            <p style="font-weight:500;">Упишіть відповідь:</p>
+            <div class="answer-field-wrapper">
+                <input type="text" 
+                       class="input-q-field" 
+                       value="${q.selected !== null ? q.selected : ''}" 
+                       oninput="window.updateInputValue(${i}, this.value)">
             </div>
-            <button class="btn-save ${q.saved ? 'saved' : ''}" onclick="save(${i})">${q.saved ? 'Збережено' : 'Зберегти відповідь'}</button>
-          </div>`;
-      }
+        </div>`;
+}
+        // ТИП 7: Звичайні тести (А, Б, В, Г, Д)
+        else {
+            optsHtml = q.opts.map((o, oi) => `
+                <label class="option-item">
+                    <input type="radio" name="q${i}" ${q.selected === oi ? 'checked' : ''} onchange="selectOpt(${i}, ${oi})"> ${o}
+                </label>`).join('');
+        }
 
-      if (q.type === 'multi') {
-        return headerText + `
-          <div class="card" id="card-${i}">
-            <div style="font-weight:700; margin-bottom:15px; font-size:1.1rem;">Завдання ${q.id}.</div>
-            <div style="margin-bottom:20px;">${qLayout}</div>
-            <div>${q.opts.map((o, oi) => `<label class="option-item"><input type="checkbox" ${q.selected.includes(oi) ? 'checked' : ''} onchange="toggleMulti(${i}, ${oi})">${o}</label>`).join('')}</div>
-            <button class="btn-save ${q.saved ? 'saved' : ''}" onclick="save(${i})">${q.saved ? 'Збережено' : 'Зберегти відповідь'}</button>
-          </div>`;
-      }
-
-      if (q.type === 'input') {
-        return headerText + `
-          <div class="card" id="card-${i}">
-            <div style="font-weight:700; margin-bottom:15px; font-size:1.1rem;">Завдання ${q.id}.</div>
-            <div style="margin-bottom:20px;">${qLayout}</div>
-            <div class="input-answer-box">
-              <p style="font-weight:500;">Упишіть відповідь:</p>
-              <div class="answer-field-wrapper" style="background: #f5f5f5;">
-                <input type="text" class="input-q-field" value="${q.selected}" oninput="updateInputValue(${i}, this.value)">
-              </div>
-            </div>
-            <button class="btn-save ${q.saved ? 'saved' : ''}" onclick="save(${i})">${q.saved ? 'Збережено' : 'Зберегти відповідь'}</button>
-          </div>`;
-      }
-
-      return headerText + `
-      <div class="card" id="card-${i}">
-        <div style="font-weight:700; margin-bottom:15px; font-size:1.1rem;">Завдання ${q.id}.</div>
-        <div style="margin-bottom:20px;">${qLayout}</div>
-        <div>${q.opts.map((o, oi) => `<label class="option-item"><input type="radio" name="q${i}" ${q.selected == oi ? 'checked' : ''} onchange="selectOpt(${i}, ${oi})">${o}</label>`).join('')}</div>
-        <button class="btn-save ${q.saved ? 'saved' : ''}" onclick="save(${i})">${q.saved ? 'Збережено' : 'Зберегти відповідь'}</button>
-      </div>`;
+        // 4. ПОВЕРНЕННЯ ФІНАЛЬНОЇ КАРТКИ
+        return headerText + `<div class="card" id="card-${i}">
+            <div style="font-weight:700; margin-bottom:15px; color: #333;">Завдання ${q.id}.</div>
+            ${qLayout} 
+            <div style="margin-top:20px;">${optsHtml}</div>
+            <button class="btn-save ${q.saved ? 'saved' : ''}" onclick="save(${i})">
+                ${q.saved ? 'Збережено' : 'Зберегти відповідь'}
+            </button>
+        </div>`;
     }).join('');
+    
     if (window.MathJax) MathJax.typesetPromise();
     renderNav();
-  }
+}
 
-  function toggleMulti(i, oi) {
+// Додай цю функцію, щоб кліки по сітці працювали (якщо її немає)
+window.applyMatch = (qIdx, rowIdx, colIdx) => {
+    data[currentSub][qIdx].selected[rowIdx] = colIdx;
+    data[currentSub][qIdx].saved = false;
+    render();
+};
+
+// --- ФУНКЦІЇ КЛІКІВ ТА ОБРОБКИ ---
+window.setActiveMatch = (qIdx, rIdx) => { activeMatch = { q: qIdx, r: rIdx }; render(); };
+window.applyMatch = (cIdx) => { if (activeMatch) { data[currentSub][activeMatch.q].selected[activeMatch.r] = cIdx; data[currentSub][activeMatch.q].saved = false; render(); } };
+window.clearMatch = (qIdx, rIdx) => { data[currentSub][qIdx].selected[rIdx] = null; data[currentSub][qIdx].saved = false; render(); };
+window.selectOpt = (i, oi) => { data[currentSub][i].selected = oi; data[currentSub][i].saved = false; render(); };
+window.updateInputValue = (i, val) => { data[currentSub][i].selected = val; data[currentSub][i].saved = false; };
+window.selectDropdown = (i, val) => { data[currentSub][i].selected = val === "" ? null : parseInt(val); data[currentSub][i].saved = false; render(); };
+
+function toggleMulti(i, oi) {
     const q = data[currentSub][i];
-    if (q.selected.includes(oi)) { q.selected = q.selected.filter(x => x !== oi); } 
+    if (q.selected.includes(oi)) { q.selected = q.selected.filter(x => x !== oi); }
     else { if (q.selected.length < 3) q.selected.push(oi); }
     q.saved = false; render();
-  }
+}
 
-  window.setActiveMatch = (qIdx, rIdx) => { activeMatch = { q: qIdx, r: rIdx }; render(); };
-  window.applyMatch = (cIdx) => { if (activeMatch) { data[currentSub][activeMatch.q].selected[activeMatch.r] = cIdx; data[currentSub][activeMatch.q].saved = false; render(); } };
-  window.clearMatch = (qIdx, rIdx) => { data[currentSub][qIdx].selected[rIdx] = null; data[currentSub][qIdx].saved = false; render(); };
-  window.selectOpt = (i, oi) => { data[currentSub][i].selected = oi; data[currentSub][i].saved = false; render(); };
-  window.updateInputValue = (i, val) => { data[currentSub][i].selected = val; data[currentSub][i].saved = false; };
-  
-  window.save = (i) => { 
-    const q = data[currentSub][i];
-    if (q.type === 'match' || q.type === 'sequence') { if (q.selected.every(val => val !== null)) q.saved = true;
-    } else if (q.type === 'multi') { if (q.selected.length === 3) q.saved = true;
-    } else if (q.type === 'input') { if (q.selected.trim() !== "") q.saved = true;
-    } else { if (q.selected !== null) q.saved = true; }
-    render();
-  };
 
-  function renderNav() { document.getElementById('n-grid').innerHTML = data[currentSub].map((q, i) => `<div class="nav-num ${q.saved ? 'red' : ''}" onclick="document.getElementById('card-${i}').scrollIntoView({behavior:'smooth'})">${q.id}</div>`).join(''); }
+function renderNav() {
+    document.getElementById('n-grid').innerHTML = data[currentSub].map((q, i) => `<div class="nav-num ${q.saved?'red':''}" onclick="document.getElementById('card-${i}').scrollIntoView({behavior:'smooth'})">${q.id}</div>`).join('');
+}
 
-  function showFinishModal() {
-    const unsaved = [...data.math, ...data.hist].filter(q => !q.saved);
-    document.getElementById('unsaved-list').innerHTML = `Не збережено завдань: ${unsaved.length}`;
+function showFinishModal() {
+    const unsaved = Object.values(data).flat().filter(q => !q.saved);
+    const countEl = document.getElementById('unsaved-list-count');
+    if(countEl) countEl.innerHTML = `Не збережено завдань: ${unsaved.length}`;
     document.getElementById('unsaved-list-inner').innerHTML = unsaved.map(q => `<div>Завдання ${q.id}</div>`).join('');
     document.getElementById('finish-overlay').style.display = 'flex';
-  }
+}
 
-  function goToResults() {
+function goToResults() {
     document.getElementById('test-page').style.display = 'none';
     document.getElementById('finish-overlay').style.display = 'none';
     document.getElementById('result-page').style.display = 'flex';
-    const subjects = [{ key: 'math', label: 'Математика' }, { key: 'hist', label: 'Історія України' }];
-    document.getElementById('res-body').innerHTML = subjects.map(sub => {
-      let score = 0;
-      data[sub.key].forEach(q => { if (q.saved) { 
-        if (q.type === 'match') { q.selected.forEach((val, idx) => { if (val === q.correct[idx]) score++; }); } 
-        else if (q.type === 'sequence') { const isFirst = q.selected[0] === q.correct[0], isLast = q.selected[3] === q.correct[3], all = q.selected.every((v, i) => v === q.correct[i]); if (all) score += 3; else if (isFirst && isLast) score += 2; else if (isFirst || isLast) score += 1; } 
-        else if (q.type === 'multi') { q.selected.forEach(val => { if (q.correct.includes(val)) score++; }); }
-        else if (q.type === 'input') { if (q.selected.trim() === q.correct) score += 2; } 
-        else { if (q.selected === q.correct) score++; } 
-      } });
-      return `<tr><td>${sub.label}</td><td>${data[sub.key].filter(q=>q.saved).length} з ${data[sub.key].length}</td><td class="bg-green">${score}</td></tr>`;
-    }).join('');
-  }
+    
+    const subjects = [
+        { key: 'ukr', label: 'Українська мова' },
+        { key: 'math', label: 'Математика' },
+        { key: 'eng', label: 'Англійська мова' },
+        { key: 'hist', label: 'Історія України' }
+    ];
+
+document.getElementById('res-body').innerHTML = subjects.map(sub => {
+    if (!data[sub.key]) return '';
+    let score = 0;
+
+    // Знайди всередині goToResults блок subjects.map і заміни частину з score:
+
+data[sub.key].forEach(q => { 
+    if (q.saved) { 
+        if (q.type === 'match') { 
+            q.selected.forEach((val, idx) => { if (val === q.correct[idx]) score++; }); 
+        } 
+        else if (q.type === 'sequence') { 
+            const all = q.selected.every((v, i) => v === q.correct[i]); 
+            if (all) score += 3; 
+            else if (q.selected[0] === q.correct[0] && q.selected[3] === q.correct[3]) score += 2; 
+            else if (q.selected[0] === q.correct[0] || q.selected[3] === q.correct[3]) score += 1; 
+        } 
+        else if (q.type === 'multi') { 
+            q.selected.forEach(val => { if (q.correct.includes(val)) score++; }); 
+        }
+        else if (q.type === 'eng-reading' || q.type === 'eng-match' || q.type === 'eng-gap-fill') {
+        q.selected.forEach((val, idx) => {
+        if (val == q.correct[idx]) score++;
+    });
+}
+        else if (q.type === 'input') { 
+            if (q.selected.toString().trim() === q.correct) score += 2; 
+        } 
+        else { 
+            if (q.selected === q.correct) score++; 
+        } 
+    } 
+});
+    let displayScore = isSecondStage ? score : "—";
+    
+    return `<tr>
+        <td>${sub.label}</td>
+        <td>${data[sub.key].filter(q=>q.saved).length} з ${data[sub.key].length}</td>
+        <td class="bg-green">${displayScore}</td>
+    </tr>`;
+}).join('');
+
+    const footer = document.querySelector('.res-footer');
+    const title = document.querySelector('.res-title');
+    if (title) title.textContent = "Ви дочасно завершили роботу над тестом";
+    if (footer) footer.innerHTML = "© Всі права захищено";
+}
+
+window.selectEngMatch = (qIdx, subIdx, val) => {
+    data[currentSub][qIdx].selected[subIdx] = val === "" ? null : parseInt(val);
+    data[currentSub][qIdx].saved = false;
+    render();
+};
+
+window.selectEngReading = (qIdx, subIdx, optIdx) => {
+    if (!data[currentSub][qIdx].selected) {
+        data[currentSub][qIdx].selected = [null, null, null, null, null];
+    }
+    data[currentSub][qIdx].selected[subIdx] = optIdx;
+    data[currentSub][qIdx].saved = false;
+    render();
+};
+
+
+window.save = (i) => { 
+    const q = data[currentSub][i];
+    
+    // Блок для англійської (Reading, Matching, Gap-fill)
+    if (q.type === 'eng-reading' || q.type === 'eng-match' || q.type === 'eng-gap-fill') {
+        if (q.selected && q.selected.every(v => v !== null && v !== "")) {
+            q.saved = true;
+        } else {
+            alert("Заповніть усі поля/пропуски в цьому завданні!");
+            return;
+        }
+    } 
+    // Математика/Історія (Мультивибір 3 з 7)
+    else if (q.type === 'multi') {
+        if (q.selected.length === 3) q.saved = true;
+        else { alert("Виберіть рівно 3 варіанти!"); return; }
+    }
+    // Відповідності (Логіка 1-1, 2-2...)
+    else if (q.type === 'match' || q.type === 'sequence') {
+        if (q.selected.every(v => v !== null)) q.saved = true;
+        else { alert("Встановіть усі відповідності!"); return; }
+    }
+    // Введення числа/тексту
+    else if (q.type === 'input') {
+        if (q.selected.toString().trim() !== "") q.saved = true;
+        else { alert("Введіть відповідь!"); return; }
+    } 
+    // Звичайні тести (A, B, C, D)
+    else {
+        if (q.selected !== null) q.saved = true;
+        else { alert("Оберіть варіант відповіді!"); return; }
+    }
+    
+    render();
+};
+
+window.selectSubQuestion = (qIdx, subIdx, val) => {
+    // Записуємо значення (перетворюємо рядок з value в число)
+    data[currentSub][qIdx].selected[subIdx] = val === "" ? null : parseInt(val);
+    // Знімаємо статус "збережено", бо відповідь змінилася
+    data[currentSub][qIdx].saved = false;
+    // render() тут НЕ викликаємо, щоб селект не закривався сам по собі під час вибору
+};
+
+
+window.returnToSelection = function() {
+    document.getElementById('result-page').style.display = 'none';
+    document.getElementById('confirm-page').style.display = 'flex';
+    if (timerInterval) { clearInterval(timerInterval); timerInterval = null; }
+};
+
 </script>
 </body>
-
 </html>
-
-
-
